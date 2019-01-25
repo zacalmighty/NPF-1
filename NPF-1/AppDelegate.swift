@@ -16,7 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let p1 : Park = Park()
+        print("\(p1)")
+        
+        let p2 : Park = Park(parkName: "Acadia National Park", parkLocation: "Maine", dateFormed: "1919-02-26", area: "47,389.67 acres (191.8 square km)", link: "TBD", location: nil, imageLink: "TBD", parkDescription: "TBD")
+        
+        print("\(p2)")
+        
+        p2.set(link: "http://en.wikipedia.org/wiki/Acadia_National_Park" )
+        
+        print("\(p2)")
+
+        let p3 = Park(parkName: "ab", parkLocation: "na", dateFormed: "1919-02-26", area: "47,389.67 acres (191.8 square km)", link: "TBD", location: nil, imageLink: "TBD", parkDescription: "TBD")
+        
+        print("\(p3)")
+        
+        
+        
         return true
     }
 

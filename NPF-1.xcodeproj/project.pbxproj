@@ -14,6 +14,8 @@
 		11299D5C21FA3BC4004E45DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11299D5B21FA3BC4004E45DB /* Assets.xcassets */; };
 		11299D5F21FA3BC4004E45DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11299D5D21FA3BC4004E45DB /* LaunchScreen.storyboard */; };
 		11299D6921FA3C1B004E45DB /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11299D6821FA3C1B004E45DB /* Park.swift */; };
+		1165888C21FA8B1400DBD6AA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1165888B21FA8B1400DBD6AA /* CoreLocation.framework */; };
+		1165888E21FABDF400DBD6AA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1165888D21FABDF400DBD6AA /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		11299D5E21FA3BC4004E45DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11299D6021FA3BC4004E45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11299D6821FA3C1B004E45DB /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		1165888B21FA8B1400DBD6AA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1165888D21FABDF400DBD6AA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1165888C21FA8B1400DBD6AA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				11299D5021FA3BC0004E45DB /* NPF-1 */,
 				11299D4F21FA3BC0004E45DB /* Products */,
+				1165888A21FA8B1400DBD6AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +72,17 @@
 				11299D6021FA3BC4004E45DB /* Info.plist */,
 				11299D5821FA3BC0004E45DB /* NPF_1.xcdatamodeld */,
 				11299D6821FA3C1B004E45DB /* Park.swift */,
+				1165888D21FABDF400DBD6AA /* Utils.swift */,
 			);
 			path = "NPF-1";
+			sourceTree = "<group>";
+		};
+		1165888A21FA8B1400DBD6AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1165888B21FA8B1400DBD6AA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1165888E21FABDF400DBD6AA /* Utils.swift in Sources */,
 				11299D5421FA3BC0004E45DB /* ViewController.swift in Sources */,
 				11299D5221FA3BC0004E45DB /* AppDelegate.swift in Sources */,
 				11299D5A21FA3BC0004E45DB /* NPF_1.xcdatamodeld in Sources */,
